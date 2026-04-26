@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>SchoolMap — Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===================================================
+       PAGE: LOGIN VISIT LOG
+  ==================================================== -->
+  <div id="page-login" class="page">
+    <div class="auth-page">
+      <div class="wobbly-card wobbly-card-white tape-decoration rotate-n1 auth-card">
+        <div class="auth-card-header">
+          <div class="auth-card-icon" style="background:#192A57">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2"><path d="M12 3v4"/><path d="M12 17v4"/><path d="M5 12h14"/></svg>
+          </div>
+          <h1 class="auth-title">Login Visit Log</h1>
+          <p class="auth-subtitle">Sign in to record your visit and access the campus map.</p>
+        </div>
+        <form id="login-form" class="auth-form" novalidate>
+          <div class="field-group">
+            <label for="login-fullname" class="field-label">Full Name</label>
+            <input type="text" id="login-fullname" class="wobbly-input" placeholder="Enter your full name" autocomplete="name" required />
+          </div>
+          <div class="field-group">
+            <label for="login-email" class="field-label">Email</label>
+            <input type="email" id="login-email" class="wobbly-input" placeholder="you@example.com" autocomplete="email" required />
+          </div>
+          <div class="field-group">
+            <label for="login-timein" class="field-label">Time-in</label>
+            <input type="text" id="login-timein" class="wobbly-input" readonly />
+          </div>
+          <div id="login-error" class="error-box" style="display:none"></div>
+          <div id="login-status" class="field-error" style="min-height:22px; color:#2d2d2d; padding-top:4px;"></div>
+          <button type="submit" id="login-submit" class="wobbly-btn wobbly-btn-primary w-full">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" style="display:none"></div>
+
+  <script src="../assets/js/core.js"></script>
+  <script src="../assets/js/login.js"></script>
+</body>
+</html>
+
